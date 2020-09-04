@@ -57,8 +57,66 @@
 
                         </form>
                     </div>
+                </div>
 
-                    
+                <div class="investor-type">
+                    <h2 class="title">What type of investor are you?</h2>
+                    <h4 class="subtitle">Select the type of investor you are below.</h4>
+
+                    <form action="" class="investor-type__form">
+                        <!-- Radio -->
+                        <div role="group">
+                            <div class="investor-type__radio">
+                                <input type="radio" name="investor-type" id="individual" value="individual">
+                                <label for="individual">Individual</label>
+                                <a>
+                                    <img src="https://img.icons8.com/ios/50/000000/info.png"/>
+                                </a>    
+                            </div>
+                            
+                            <div class="investor-type__radio">
+                                <input type="radio" name="investor-type" id="business" value="business">
+                                <label for="business">Business</label>   
+                                <a>
+                                    <img src="https://img.icons8.com/ios/50/000000/info.png"/>
+                                </a> 
+                            </div>
+    
+                            <div class="investor-type__radio">
+                                <input type="radio" name="investor-type" id="ira" value="ira">
+                                <label for="ira">IRA</label>  
+                                <a>
+                                    <img src="https://img.icons8.com/ios/50/000000/info.png"/>
+                                </a>  
+                            </div>
+    
+                            <div class="investor-type__radio">
+                                <input type="radio" name="investor-type" id="trust" value="trust">
+                                <label for="trust">Trust</label>
+                                <a>
+                                    <img src="https://img.icons8.com/ios/50/000000/info.png"/>
+                                </a>    
+                            </div>
+                        </div>
+                        
+
+                        <!-- Textarea -->
+
+                        <textarea disabled rows="4" name="text">
+I am a natural person investing on my own behalf as a sole owner, join tenant or tenant in common.
+                        </textarea>
+
+                        <!-- Checkbox -->
+
+                        <div class="investor-type__checkbox">
+                            <input type="checkbox" name="agree" id="agree" value="yes">
+                            <label for="agree">I agree to the terms and recieving notifications from iintoo <a href="#">View full terms</a></label>
+                        </div>
+
+                        <!-- Button -->
+
+                        <button class="button button_form" type="submit">Create Account</button>
+                    </form>
                 </div>
             </main>
         </div>
