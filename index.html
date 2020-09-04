@@ -3,16 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="fonts/barlow_regular_macroman/stylesheet.css">
+    <link rel="stylesheet" href="fonts/barlow_light_macroman/stylesheet.css">
+    <link rel="stylesheet" href="fonts/barlow_medium_macroman/stylesheet.css">
+    <link rel="stylesheet" href="fonts/barlow_semibold_macroman/stylesheet.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>iintoo</title>
 </head>
 <body>
     <div class="container">
-        <img class="bg-img" src="img/bg.jpg" alt="background">
+        <div>
+            <img src="img/bg.jpg" alt="background">
+            <img class="logo" src="img/logo.svg" alt="logo">
+        </div>
+
         <div class="text-content">
             <header>
-                <h1>Get iintoo it today</h1>
+                <h1 class="title">Get iintoo it today</h1>
+                <h3 class="subtitle">There is no charge or obligation upon registration.</h3>
             </header>
+            <main>
+                <div class="register">
+                    <div class="register__buttons">
+                        <button class="button button_fb">
+                            <a href="https:www.facebook.com">
+                                <img src="img/facebook.svg" alt="facebook logo">Register with Facebook 
+                            </a>
+                        </button>
+
+                        <button class="button button_li">
+                            <a href="https:www.linkedin.com">
+                                <img src="img/linkedin.svg" alt="linkedin logo">Register with LinkedIn 
+                            </a>
+                        </button>
+                    </div>
+
+                    <div class="register__subtitle">
+                        <span>OR</span>
+                    </div>
+                    
+                    <div class="register__form">
+                        <form action="">
+                            <div class="form-element">
+                                <label for="email">Email</label>
+                                <input type="email" name="user_email" id="email">
+                            </div>
+
+                            <div class="form-element">
+                                <label for="phone">Phone</label>
+                                <input type="tel" name="user_phone" id="phone">
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+                <div class="investor-type">
+                    <h2 class="title">What type of investor are you?</h2>
+                    <h4 class="subtitle">Select the type of investor you are below.</h4>
+
+                    <form action="" class="investor-type__form">
+                        <!-- Radio -->
+                        <div role="group">
+                            <div class="investor-type__radio">
+                                <input type="radio" name="investor-type" id="individual" value="individual">
+                                <label for="individual">Individual</label>
+                                <a>
+                                    <img src="https://img.icons8.com/ios/50/000000/info.png"/>
+                                </a>    
+                            </div>
+                            
+                            <div class="investor-type__radio">
+                                <input type="radio" name="investor-type" id="business" value="business">
+                                <label for="business">Business</label>   
+                                <a>
+                                    <img src="https://img.icons8.com/ios/50/000000/info.png"/>
+                                </a> 
+                            </div>
+    
+                            <div class="investor-type__radio">
+                                <input type="radio" name="investor-type" id="ira" value="ira">
+                                <label for="ira">IRA</label>  
+                                <a>
+                                    <img src="https://img.icons8.com/ios/50/000000/info.png"/>
+                                </a>  
+                            </div>
+    
+                            <div class="investor-type__radio">
+                                <input type="radio" name="investor-type" id="trust" value="trust">
+                                <label for="trust">Trust</label>
+                                <a>
+                                    <img src="https://img.icons8.com/ios/50/000000/info.png"/>
+                                </a>    
+                            </div>
+                        </div>
+                        
+
+                        <!-- Textarea -->
+
+                        <textarea disabled rows="4" name="text">
+I am a natural person investing on my own behalf as a sole owner, join tenant or tenant in common.
+                        </textarea>
+
+                        <!-- Checkbox -->
+
+                        <div class="investor-type__checkbox">
+                            <input type="checkbox" name="agree" id="agree" value="yes">
+                            <label for="agree">I agree to the terms and recieving notifications from iintoo <a href="#">View full terms</a></label>
+                        </div>
+
+                        <!-- Button -->
+
+                        <button class="button button_form" type="submit">Create Account</button>
+                    </form>
+                </div>
+            </main>
         </div>
     </div>
 </body>

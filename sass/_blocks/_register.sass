@@ -1,0 +1,63 @@
+.register 
+    &__buttons
+        display: flex
+        justify-content: space-between
+        margin-top: 3em
+    &__subtitle
+        text-align: center
+        width: 50%
+        margin: 0 auto
+        overflow: hidden
+        margin-top: 3em
+        span
+            position: relative
+            &::before
+                display: block
+                width: 500px
+                content: ''
+                position: absolute
+                border-top: 2px solid #EEEEEE
+                top: 50%
+                right: 2em
+            &::after
+                display: block
+                width: 500px
+                content: ''
+                position: absolute
+                border-top: 2px solid #EEEEEE
+                top: 50%
+                left: 2em
+    &__form
+        margin-top: 3em
+        form
+            display: flex
+            justify-content: space-between
+
+.form-element
+    width: 45%
+    position: relative
+    &:focus, &:active
+        &::before
+            display: block
+            height: 100%
+            content: ''
+            position: absolute
+            border-right: 2px solid #3698FB
+            overflow: hidden
+    input
+        display: block
+        outline: none
+        font-weight: 700
+        width: 100%
+        background: #fff
+        border: 2px solid #EEEEEE
+        padding: 1.5em .5em .5em .5em
+        font-size: 1em
+        cursor: pointer
+    label
+        color: #AFAFAF
+        cursor: pointer
+        display: block
+        position: absolute
+        left: .7em
+
