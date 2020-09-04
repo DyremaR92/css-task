@@ -3,3 +3,28 @@
         display: flex
         justify-content: space-between
         margin-top: 3em
+    &__subtitle
+        text-align: center
+        width: 50%
+        margin: 0 auto
+        overflow: hidden
+        margin-top: 3em
+        span
+            position: relative
+            &::before
+                display: block
+                width: 500px
+                content: ''
+                position: absolute
+                border-top: 2px solid #EEEEEE
+                top: 50%
+                right: 2em
+            &::after
+                display: block
+                width: 500px
+                content: ''
+                position: absolute
+                border-top: 2px solid #EEEEEE
+                top: 50%
+                left: 2em
+
